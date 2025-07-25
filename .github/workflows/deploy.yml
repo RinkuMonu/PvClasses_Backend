@@ -42,7 +42,7 @@ jobs:
           port: ${{ secrets.BACKEND_SSH_PORT }}
           script: |
             echo "🔐 Backing up .env (if exists)"
-            cd /home/apipvcl/public_html/Crm_Backnd
+            cd /home/apipvcl/public_html/PvClasses_Backend
             if [ -f .env ]; then
               cp .env /home/apipvcl/.env_backup
             fi
