@@ -21,7 +21,6 @@ exports.updateLessonProgress = async (req, res, next) => {
         message: "lesson not found",
       });
     }
-
     let progress = await LessonProgress.findOne({
       user: req.user.id,
       lesson: lessonId,
