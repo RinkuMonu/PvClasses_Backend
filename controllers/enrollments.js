@@ -19,7 +19,6 @@ exports.getEnrollments = async (req, res, next) => {
         message: "No enrollments found",
       });
     }
-
     res.status(200).json({
       success: true,
       count: enrollments.length,
