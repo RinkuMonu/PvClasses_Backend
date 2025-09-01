@@ -20,6 +20,7 @@ exports.getCategories = async (req, res, next) => {
   }
 };
 
+
 // @desc    Get single category
 // @route   GET /api/categories/:id
 // @access  Public
