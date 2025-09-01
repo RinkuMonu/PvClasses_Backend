@@ -40,8 +40,8 @@ app.use(helmet());
 // CORS configuration
 app.use(
   cors({
-    origin: process.env.CLIENT_URL || "http://localhost:3000", // Update with your client URL
-    credentials: true, // Allow cookies if needed
+    origin: process.env.CLIENT_URL || "http://localhost:3000", 
+    credentials: true, 
   })
 );
 
@@ -101,7 +101,7 @@ app.use("/api/payments", paymentRoutes);
 app.use("/api/query", contactus);
 
 // Health check route
-app.get("/api/health", (req, res) => {
+app.get("/", (req, res) => {
   res.status(200).json({
     success: true,
     message: "Server is running",
